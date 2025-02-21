@@ -1,30 +1,36 @@
-# RViz 3D Navigation Goal Tool
+# RViz 3D 导航目标工具  
 
-As technology continues to improve, the need for 3d navigation has become more and more important. Here is an old tool from Willow Garage which provides the support for 3d nav goal. The code is extracted from this [repository](https://github.com/HKUST-Aerial-Robotics/plan_utils), please visit for more information.  
+随着技术的不断进步，**3D 导航** 需求变得越来越重要。这里提供了一个来自 **Willow Garage** 的旧工具，支持 **3D 导航目标** 的设置。该代码提取自这个 [仓库](https://github.com/HKUST-Aerial-Robotics/plan_utils)，更多详细信息请访问该链接。
 
-## Building
+## 🔧 编译方法  
 
-This package is just like any other ROS pacakge, just clone it into your workspace and compile it accordingly.
+此软件包与其他 **ROS** 软件包类似，只需克隆到你的工作空间并进行编译。
 
-ssh clone:  
+### 📥 克隆仓库  
+
+- **HTTPS 克隆**：
+
 ```bash
-git clone git@github.com:BruceChanJianLe/rviz-3d-nav-goal-tool.git
+git clone https://github.com/LiiXZ/rviz-3d-nav-goal-tool.git
 ```
 
-http clone:  
-```bash
-git clone https://github.com/BruceChanJianLe/rviz-3d-nav-goal-tool.git
-```
+### 🛠️ 编译  
 
-building:  
 ```bash
 catkin_make
 ```
 
-## Using
+## 🚀 使用方法  
 
-To avoid conflicting with the 2D nav goal, please click the `minus` icon to remove it. Then click on the `plus` icon to choose the 3D nav goal. You may send the goal by left clicking and deciding the orientation of the goal. Without letting go of the mouse, right click to indicate the height of the goal.
+1. **避免与 2D 导航目标冲突**  
+   - 先点击 **"减号"（minus）** 图标 **移除 2D 导航目标** 。  
+   - 然后点击 **"加号"（plus）** 图标 **选择 3D 导航目标** 。
 
-## Reference
+2. **发送 3D 导航目标**  
+   - **左键单击** 选择目标点并设定方向。  
+   - **不要松开鼠标**，然后 **右键单击** 以调整目标的高度。  
 
-https://github.com/ros-planning/3d_navigation
+## 📚 参考  
+
+更多信息请参考：  
+🔗 [3D Navigation 官方仓库](https://github.com/ros-planning/3d_navigation)
